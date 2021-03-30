@@ -10,9 +10,9 @@ Jasmine Valera (jav2182)
 
 ## Background
 
-The Carma app is split into a frontend written in React.js. User stories/cucumber tests can be found in the features/ folder in the frontend GitHub. In this iteration, the frontend is using mock APIs as a response for testing. The ‘axios’ library is used to make API requests to specified routes.
+The Carma app is split into a frontend written in React.js. User stories/cucumber tests can be found in the features/ folder in the frontend GitHub. In this iteration, the frontend is connected to the backend. The ‘axios’ library is used to make API requests to specified routes.
 
-The cucumber tests are based on cucumber-js, and the ‘got’ and ‘jsdom’ libraries were used to each make a simple HTTP request to the deployed frontend and to access DOM elements.
+The cucumber tests are based on cucumber-js, and the ‘got’ and ‘jsdom’ libraries were used to each make a simple HTTP request to the deployed frontend and to access DOM elements along with 'selenium'.
 
 A backend using Ruby on Rails deployed on Heroku. RSpec tests can be found in the backend GitHub. API routes are below. The authentication API is linked to AWS Cognito, which stores the username/password and returns a bearer token.
 
@@ -22,11 +22,10 @@ Please refer to the frontend and backend READMEs for more specific information. 
 ## Deployment Links
 
 >Frontend React App: http://carma-www-dashboard.s3-website.us-east-2.amazonaws.com/ 
-
 >Backend Rails API: https://carma-apis.herokuapp.com/
 
 
-## Github Links
+## Github Links (Shared with TAs)
 
 >Frontend Github Repo: https://github.com/JudgeMadan/carma-frontend/
 >Backend Github Repo: https://github.com/jvalera174/carma-backend
