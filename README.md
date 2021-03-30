@@ -25,7 +25,7 @@ Please refer to the frontend and backend READMEs for more specific information. 
 >Backend Rails API: https://carma-apis.herokuapp.com/
 
 
-## Github Links (Shared with TAs)
+## Github Links (Shared with TAs privately)
 
 >Frontend Github Repo: https://github.com/JudgeMadan/carma-frontend/
 >Backend Github Repo: https://github.com/jvalera174/carma-backend
