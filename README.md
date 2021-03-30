@@ -22,12 +22,14 @@ Please refer to the frontend and backend READMEs for more specific information. 
 ## Deployment Links
 
 >Frontend React App: http://carma-www-dashboard.s3-website.us-east-2.amazonaws.com/ 
+
 >Backend Rails API: https://carma-apis.herokuapp.com/
 
 
 ## Github Links (Shared with TAs privately)
 
 >Frontend Github Repo: https://github.com/JudgeMadan/carma-frontend/
+
 >Backend Github Repo: https://github.com/jvalera174/carma-backend
 
 <br>
