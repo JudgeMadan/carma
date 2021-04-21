@@ -101,6 +101,8 @@ For this first iteration, the backend allows users to create an account, sign-in
 
 For the second iteration, we added a Coins API and a Market Trading API. The Coins API allows users to create and retire carbon coins and allows admins to verify coins created by COPs. The Market Trading API allows users to buy and sell coins in the market.
 
+For the third iteration, we added more features to the Market Trading API to make allow for custom trading (trading with a specific COP) in addition to market trading. We also added a feature that allows users to buy multiple coins through one request. Also, we allow trade requests to expire after a designated amount of time.
+
 ## Installation instructions to run our backend locally
 
 <br>
@@ -122,10 +124,9 @@ For the second iteration, we added a Coins API and a Market Trading API. The Coi
 >Run these commands in your terminal to start the server: 
 
 ```
-bundle install
 cd carma-backend
+bundle install
 rails db:migrate
-rails db:seed
 rails server
 ```
 
@@ -141,6 +142,12 @@ rails server
 Profiles:
 
   GET /profiles
+  
+  GET /profiles/cop
+  
+  GET /profiles/businesses
+  
+  GET /profiles/admin
 
   GET /profiles/:id
 
@@ -177,19 +184,26 @@ Market Trading:
 
   GET /trades
   
-  POST /trades/buy with form-data body {profile_id, coin_id - random number, price, buy_or_sell: buy}
+  POST /trades/buy with form-data body {profile_id, price, quantity (opt), traded_with (opt)}
 
-  POST /trades/sell with form-data body {profile_id, coin_id, price, buy_or_sell: sell}
+  POST /trades/sell with form-data body {profile_id, coin_id, price}
   
   GET /trades/:id
   
   GET /trades/user/:user_id
   
+  GET /trades/pending/buy/user/:user_id
+  
+  GET /trades/pending/sell/user/:user_id
+
+  GET /trades/marketprice
+  
   PATCH /trades/:id
+  
+  PATCH trades/expired_status
   
   DELETE /trades/:id
   
-  GET /trades/marketprice
 ```
 
 <br>
@@ -213,10 +227,6 @@ bundle exec rspec -fd spec/requests
 \*Note to TAs: We are testing auth_controller, profile_controller, coin_controller, and trades_controller through the specs in the requests folder.
 
 
-
-
-<br>
-<br>
 
 ---
 ---
