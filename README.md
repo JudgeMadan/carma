@@ -41,7 +41,7 @@ Please refer to the frontend and backend READMEs for more specific information. 
 <br>
 <br>
 
-# carma-www-frontend
+# Carma Frontend
 
 Based on the React [Metronic Theme](https://keenthemes.com). Licenses purchased for commercial use. Components adapted for use and APIs implemented separately in the carma-www-backend repo.
 
@@ -83,7 +83,6 @@ Due to package/version conflicts, pretty print is not provided, i.e. each scenar
 
 <br>
 <br>
-
 
 
 
