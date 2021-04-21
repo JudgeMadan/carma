@@ -30,7 +30,7 @@ Please refer to the frontend and backend READMEs for more specific information. 
 
 >Frontend Github Repo: https://github.com/JudgeMadan/carma-frontend/
 
->Backend Github Repo: https://github.com/jvalera174/carma-backend
+>Backend Github Repo: https://github.com/jvalera174/carma-backend/
 
 <br>
 <br>
@@ -41,42 +41,39 @@ Please refer to the frontend and backend READMEs for more specific information. 
 <br>
 <br>
 
-# Carma Frontend
+# carma-www-frontend
+
+Based on the React [Metronic Theme](https://keenthemes.com). Licenses purchased for commercial use. Components adapted for use and APIs implemented separately in the carma-www-backend repo.
+
+Cucumber tests are written for authentication, profile, trading, and coin user stories. Refer to the features folder in the root directory.
+
+Currently, the app is deployed on this [link](http://carma-www-dashboard.s3-website.us-east-2.amazonaws.com/).
+
+## Installation instructions to run our frontend locally.
+
+### You must have **node** and **npm >= 7.4.0** installed.
 
 
-## Installation instructions to run our frontend locally
-
-<br>
-
-To run the frontend locally, you must have node installed on your machine. 
+To run the frontend locally, you must have node installed on your machine.
 
 After cloning the project directory, run:
 
-```npm install``` 
+```npm install```
 
-### In the project directory, you can run:
-
-<br>
+In the project directory, you can run:
 
 ```npm start```
 
-<br>
-This runs the app in the development mode.
-Open http://localhost:3000 to view it in the browser.
+This runs the app in development mode.
 
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser. (Running ```npm start``` should automatically start the local server.)
 
-
-<br>
-<br>
 
 ## Testing using Cucumber-js
-<br>
 
-``` npm test``` with Google Chrome installed as the default test kit.
+**After running the app locally with ```npm start```**, open a new command line window to run ``` npm test``` (Google Chrome must be installed). A test Chrome browser, automated by Selenium, will show up to run the cucumber-js tests.
 
-
-
-
+Due to package/version conflicts, pretty print is not provided, i.e. each scenario/steps are not printed.
 
 <br>
 <br>
@@ -86,9 +83,6 @@ Open http://localhost:3000 to view it in the browser.
 
 <br>
 <br>
-
-
-
 
 
 
