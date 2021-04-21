@@ -51,7 +51,7 @@ Currently, the app is deployed on this [link](http://carma-www-dashboard.s3-webs
 
 ## Installation instructions to run our frontend locally.
 
-### You must have **node** and **npm >= 7.4.0** installed.
+### You must have **node.js** and **npm >= 7.4.0** installed.
 
 
 To run the frontend locally, you must have node installed on your machine.
